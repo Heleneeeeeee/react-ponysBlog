@@ -3,8 +3,10 @@ import Footer from '../Component/Footer';
 
 const Poneytalk = () => {
 const handleFormSubmit = (event) => {
-    console.log('hello')
-}
+    const sentences= ["Hello","Bye", "Coucou", "Ciao"]
+    const random = sentences[Math.floor(Math.random() * sentences.length)];
+    console.log(random);}
+
     return (
         <>
         <Header />
@@ -20,5 +22,6 @@ const handleFormSubmit = (event) => {
     </>
   );
 }
+
 
 export default Poneytalk;
